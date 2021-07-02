@@ -41,7 +41,7 @@
                     <tabBarItem key="tabBarItem" title="Item 2" id="f6V-7f-vcf"/>
                     <connections>
                         <outlet property="currentNumberLabel" destination="UcP-3v-bAU" id="tQ1-ZD-WG0"/>
-                        <outlet property="sliderGreenView" destination="l0D-Tu-P24" id="R37-ma-uhP"/>
+                        <outlet property="slider" destination="l0D-Tu-P24" id="cHN-EY-HZk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2i8-ei-FeC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -82,7 +82,7 @@
                     <tabBarItem key="tabBarItem" title="Item 1" id="ccY-Rg-xjm"/>
                     <connections>
                         <outlet property="currentNumberLabel" destination="7rs-te-q4g" id="A9h-HB-03d"/>
-                        <outlet property="sliderRedView" destination="UfN-hK-TPI" id="X20-OV-OzY"/>
+                        <outlet property="slider" destination="UfN-hK-TPI" id="WF1-lq-LGq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wSv-H3-DNB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

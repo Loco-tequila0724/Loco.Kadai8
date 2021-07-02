@@ -2,21 +2,20 @@ import UIKit
 
 class GreenViewController: UIViewController {
     @IBOutlet weak private var currentNumberLabel: UILabel!
-    @IBOutlet weak private var sliderGreenView: UISlider!
-    internal var sliderValue: Float = 0.0
+    @IBOutlet weak private var slider: UISlider!
+
+    private var appDelegate: AppDelegate {
+        (UIApplication.shared.delegate as? AppDelegate)!
+    }
 
     override func viewWillAppear(_ animated: Bool) {
-        currentNumberLabel.text = String(sliderValue)
-        sliderGreenView.value = sliderValue
+        super.viewWillAppear(animated)
+        currentNumberLabel.text = String(appDelegate.sliderValue)
+        slider.value = appDelegate.sliderValue
     }
 
     @IBAction private func moveSlider(_ sender: Any) {
-        currentNumberLabel.text = String(sliderValue)
-        sliderValue = sliderGreenView.value
-
-        guard let redViewController = self.tabBarController?.viewControllers![0] as? RedViewController else {
-            return
-        }
-        redViewController.sliderValue = sliderValue
+        currentNumberLabel.text = String(slider.value)
+        appDelegate.sliderValue = slider.value
     }
 }
